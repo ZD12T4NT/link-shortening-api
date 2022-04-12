@@ -1,10 +1,31 @@
 import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { Container } from './components/styles/Container.styled';
+import { Header } from './components/Header';
+
+
+
 
 function App() {
+
+  const theme = {
+    colors: {
+        header: '#fff'
+
+    },
+
+    mobile: '768px'
+
+  }
+
   return (
+    <ThemeProvider theme = {theme}>
    <>
-   <h1>Let's create a link shortening api</h1>
+   <Container>
+    <Header />
+   </Container>
    </>
+   </ThemeProvider>
   );
 }
 
