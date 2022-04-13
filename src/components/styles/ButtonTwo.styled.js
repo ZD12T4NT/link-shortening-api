@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const Button = styled.button`
-    padding:10px 20px;
-    border-radius:20px;
+export const ButtonTwo = styled.button`
+    padding:1rem 1.5rem;
+    border-radius:10px;
     border:none;
     cursor: pointer;
     color:${({ color }) => color || '#333'};
-    font-size:18px;
+    font-size:1.3em;
     transition:all 0.2s ease-in-out;
     background-color:${({ bg }) => bg || '#fff'};
     font-weight:700;

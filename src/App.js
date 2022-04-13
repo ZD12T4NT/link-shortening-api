@@ -2,6 +2,7 @@ import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { Container } from './components/styles/Container.styled';
 import { Header } from './components/Header';
+import { LinkInput } from './components/LinkInput';
 
 
 
@@ -23,6 +24,7 @@ function App() {
    <>
    <Container>
     <Header />
+    <LinkInput />
    </Container>
    </>
    </ThemeProvider>

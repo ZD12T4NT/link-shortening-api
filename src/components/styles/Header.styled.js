@@ -35,7 +35,7 @@ export const Logo = styled.img`
 `
 
 export const Image = styled.img`
-    width: 600px;
+    width: 635px;
     margin-left:40px;
 `
 
