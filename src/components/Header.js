@@ -23,16 +23,16 @@ export const Header = () => {
              </Navbar>
           <Navbar>
           <Button>Login</Button>
-          <Button bg='hsl(180, 66%, 49%)' color='#fff'>Sign Up</Button>
+          <Button bg='#666AF6' color='#fff'>Sign Up</Button>
           </Navbar>
           </Nav>
           <Flex>
             <div>
               <h1>More than just shorter links.</h1>
               <p>Build your brands recognition and get detailed insights on how your links are performing.</p>
-          <Button bg='hsl(180, 66%, 49%)' color='#fff'>Get started</Button>
+          <Button bg='#666AF6' color='#fff'>Get Started</Button>
             </div>
-            <Image src="./images/illustration-working.svg" alt="" />
+            <Image src="./images/13.svg" alt="" />
           </Flex>
         </Container>
     </StyledHeader>
