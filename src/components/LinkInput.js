@@ -7,10 +7,10 @@ export const LinkInput = () => {
   return (
     <Container>
         <StyledInput>
-         <InputContainer>
-            <Input required placeholder="Shorten link here..."/>
-            <ButtonTwo bg="#666AF6" color="#fff">Shorten It!</ButtonTwo>
-          </InputContainer>
+          <InputContainer>
+              <Input required placeholder="Shorten link here..."/>
+              <ButtonTwo bg="#666AF6" color="#fff">Shorten It!</ButtonTwo>
+           </InputContainer>
         </StyledInput>
     </Container>
 

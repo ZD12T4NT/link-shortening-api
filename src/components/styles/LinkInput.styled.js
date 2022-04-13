@@ -16,6 +16,25 @@ export const InputContainer = styled.div`
     justify-content: center;
     align-items: center;
     border-radius:10px;
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){
+        width:100%;
+    }
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){
+        flex-direction:column;
+        text-align:center;
+
+        input{
+            margin-left:15px;
+            width:90%;
+        }
+
+        button{
+            margin-top:1rem;
+            width:90%;
+        }
+    }
 `
 
 export const Input = styled.input`

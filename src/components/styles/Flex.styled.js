@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Flex = styled.div`
     display: flex;
     align-items: center;
-    height:80vh;
+    min-height:80vh;
 
 
     & > div,
