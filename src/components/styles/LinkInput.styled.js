@@ -4,18 +4,20 @@ export const StyledInput = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height:50vh;    
+    
 `
 
 export const InputContainer = styled.div`
     background: url('./images/bg-shorten-desktop.svg') no-repeat center  ;
-    width:89%;
+    width:77%;
     height: 160px;
     background-color:hsl(257, 27%, 26%);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius:10px;
+    position:absolute;
+    top: -80px;
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
         width:100%;

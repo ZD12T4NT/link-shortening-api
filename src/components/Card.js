@@ -1,21 +1,23 @@
 import React from "react";
-import { CardStyles, CardHeader } from "./styles/Card.styled";
-import { Container } from "./styles/Container.styled";
+import { Cards } from "./Cards";
+import { LinkInput } from "./LinkInput";
+import { CardContainer } from "./styles/Card.styled";
+import { Container } from './styles/Container.styled'
+import { Title } from "./styles/Title.styled";
 
-export const Card = ({item: {id, image, title, body}}) => {
+
+export const Card = () => {
   return (
+    <CardContainer>
       <Container>
-          <CardHeader>
-                <h1>advanced statistics</h1>
-                <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
-          </CardHeader>
-          <CardStyles>
-          <div>
-             <img src={`./images/${image}`} alt="" />
-             <h2>{title}</h2>
-             <p>{body}</p>
-          </div>
-          </CardStyles>
-      </Container>
+       <LinkInput />
+        <Title>
+          <h2>Advanced Statistics</h2>
+          <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        </Title>
+        <Cards />
+      </Container>  
+    </CardContainer>
+
   )
 };

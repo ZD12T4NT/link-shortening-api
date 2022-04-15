@@ -13,7 +13,6 @@ export const Nav = styled.nav`
 
     a{
         margin: 0 15px;
-        padding:0 10px;
         color:hsl(257, 7%, 63%);
         transition:all 0.2s ease-in-out;
         text-transform:capitalize;
