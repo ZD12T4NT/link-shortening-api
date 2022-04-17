@@ -10,7 +10,7 @@ export const Header = () => {
         <Container>
           <Nav>
             <Navbar>
-            <Logo src='./images/logo.svg'/>
+            <Logo src='./images/Shorty.svg'/>
              <li>
                <a href="/">features</a>
              </li>

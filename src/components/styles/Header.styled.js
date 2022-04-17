@@ -30,7 +30,7 @@ export const Navbar = styled.ul`
 `
 
 export const Logo = styled.img`
-
+width: 150px;
 `
 
 export const Image = styled.img`

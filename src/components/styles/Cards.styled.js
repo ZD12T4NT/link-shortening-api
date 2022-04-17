@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
-height:70vh;
+    min-height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +19,9 @@ height:70vh;
     div{
         background-color:#fff;
         border-radius:10px;
-        height:250px;
+        min-height:250px;
         width:350px;
-        padding:65px 20px 0 40px;
+        padding:65px 20px;
         position: relative;
         margin:0 20px 0 0;
 
@@ -46,7 +46,27 @@ height:70vh;
             padding: 15px;
             border-radius:50%;
         }
-
-       
+        
     }
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){
+        flex-direction:column;
+        text-align:center;
+
+        div:nth-of-type(3){
+        margin-top:5rem;
+        margin-bottom:5rem;
+    }
+
+    div{
+
+
+    img{
+            position:absolute;
+            left:145px;
+           
+        }
+
+    }
+}
 `

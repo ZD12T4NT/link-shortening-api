@@ -8,7 +8,7 @@ export const Footer = () => {
     <FooterContainer>
             <FooterStyling>
               <div>
-                  <Logo src="./images/logo.svg" />
+                  <Logo src="./images/Shorty (1).svg" />
               </div>
               <div>
            <ul>

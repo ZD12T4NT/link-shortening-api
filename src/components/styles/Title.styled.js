@@ -21,4 +21,11 @@ export const Title = styled.div`
     color:hsl(257, 7%, 63%);
     
     }
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){
+        p{
+            width:400px;
+        }
+
+    }
 `

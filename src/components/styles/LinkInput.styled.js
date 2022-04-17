@@ -20,7 +20,6 @@ export const InputContainer = styled.div`
     top: -80px;
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
-        width:100%;
     }
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
