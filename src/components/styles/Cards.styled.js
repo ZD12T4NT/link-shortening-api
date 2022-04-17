@@ -7,6 +7,7 @@ height:70vh;
     align-items: center;
     margin-top:2rem;
 
+   
     div:nth-of-type(2){
         margin-top:5rem;
     }
