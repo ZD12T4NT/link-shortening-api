@@ -27,15 +27,23 @@ export const Nav = styled.nav`
 export const Navbar = styled.ul`
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){  
+        display:none;
+    }
 `
 
 export const Logo = styled.img`
-width: 150px;
+    width: 150px;
 `
 
 export const Image = styled.img`
     width: 635px;
     margin-left:40px;
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){  
+        width:550px;
+    }
 `
 
 

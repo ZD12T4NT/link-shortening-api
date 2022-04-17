@@ -28,5 +28,7 @@ export const Flex = styled.div`
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
         flex-direction:column;
         text-align:center;
+        margin-top:5rem;
+
     }
 `
