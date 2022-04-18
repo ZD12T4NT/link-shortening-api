@@ -24,7 +24,7 @@ export const InputContainer = styled.div`
     top: -80px;
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
-        width: 130%;
+        width: 100%;
     }
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
@@ -55,7 +55,7 @@ export const Input = styled.input`
 `
 
 export const LinkStyles = styled.div`
- width: 71%;
+ width: 71.5%;
  display: flex;
  margin:8rem auto;
  justify-content: space-around;
@@ -86,7 +86,7 @@ a{
  @media only screen and (max-width:${({ theme }) => theme.mobile}){
         flex-direction:column;
         text-align:center;
-        width: 97%;
+        width: 90%;
 
         ul{
             flex-direction:column;

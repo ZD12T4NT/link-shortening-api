@@ -59,6 +59,7 @@ export const CardsContainer = styled.div`
     }
 
     div{
+        margin: 0;
 
 
     img{

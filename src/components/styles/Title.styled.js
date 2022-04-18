@@ -22,10 +22,5 @@ export const Title = styled.div`
     
     }
 
-    @media only screen and (max-width:${({ theme }) => theme.mobile}){
-        p{
-            width:400px;
-        }
-
-    }
+    
 `
