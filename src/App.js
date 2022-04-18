@@ -19,7 +19,7 @@ function App() {
 
     },
 
-    mobile: '768px'
+    mobile: '920px'
 
   }
 

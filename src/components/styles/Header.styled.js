@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 export const StyledHeader = styled.div`
     background-color:${({ theme }) => theme.colors.header};
-    padding: 40px 0;
+    padding: 40px 20px;
+
+    @media only screen and (max-width:${({ theme }) => theme.mobile}){  
+        padding:40px 0;
+    }
   
 `
 

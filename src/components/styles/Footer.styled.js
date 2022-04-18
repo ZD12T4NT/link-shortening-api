@@ -11,7 +11,6 @@ export const FooterContainer = styled.div`
     @media only screen and (max-width:${({ theme }) => theme.mobile}){
        flex-direction:column;
        text-align:center;
-
     }
    
 `
@@ -20,10 +19,14 @@ export const FooterStyling = styled.div`
     display: flex;
     align-items: center;
     height:100%;
+    
 
     div{
         flex:1;        
         height:200px;
+        margin-top:5rem;
+        
+
        
        
         span{
@@ -57,6 +60,7 @@ export const FooterStyling = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        margin:0;
      }
 
     }
