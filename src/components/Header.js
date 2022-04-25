@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Nav, StyledHeader, Logo, Navbar, Image } from './styles/Header.styled'
 import { Flex } from './styles/Flex.styled'
 import { Button } from './styles/Button.styled'
@@ -6,11 +6,13 @@ import { Burger } from './styles/Burger.styled'
 
 export const Header = () => {
 
+  const [open, setOpen] = useState(false)
+
   return (
     <StyledHeader>
           <Nav>
           <Logo src='./images/Shorty.svg'/>
-            <Navbar>
+            <Navbar open={open}>
              <li>
                <a href="/">features</a>
              </li>
@@ -25,10 +27,10 @@ export const Header = () => {
           <Button>Login</Button>
           <Button bg='#666AF6' color='#fff'>Sign Up</Button>
           </Navbar>
-          <Burger>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
+          <Burger open={open} onClick={() => setOpen(!open)}>
+            <span></span>
+            <span></span>
+            <span></span>
           </Burger>
           </Nav>
           <Flex>

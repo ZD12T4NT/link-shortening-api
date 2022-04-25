@@ -6,27 +6,20 @@ export const Burger = styled.button`
     outline:none;
     cursor: pointer;
     display: none;
+    z-index:999;
 
-    .line{
+
+    span{
         display: block;
-        width:40px;
-        height:3px;
+        width:2rem;
+        margin-bottom:7px;
+        height:0.20rem;
         background-color:#000;
-        margin-block:10px;
         border-radius:4px;
-        transition:transform 0.3s, opacity 0.25s;
+        transition:transform 0.2s, opacity 0.25s;
 
-        .active .line:nth-child(1){
-            transform:translateX(14px) rotate(45deg);
-        }
 
-        .active .line:nth-child(2){
-            opacity: 0;
-        }
-
-        .active .line:nth-child(3){
-            transform:translateX(-14px) rotate(-45deg);
-        }
+      
     }
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){

@@ -26,6 +26,8 @@ export const Nav = styled.nav`
             color:#000;
         }
     }
+
+    
 `
 
 export const Navbar = styled.ul`
@@ -33,7 +35,36 @@ export const Navbar = styled.ul`
     align-items: center;
 
     @media only screen and (max-width:${({ theme }) => theme.mobile}){  
-        display:none;
+        flex-flow: column nowrap;
+        background-color: #DEDEDE;
+        position: fixed;
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        padding-top: 3.5rem;
+        transition: transform 0.3s ease-in-out;
+        align-items:flex-start;
+        justify-content: center;
+
+        li{
+            margin:2rem 0;
+
+            &:nth-child(3){
+            margin-bottom:10rem;
+
+            }
+        }
+        
+
+        a{
+        color:#000;
+
+        &:hover{
+            opacity: 0.5;
+        }
+        }
     }
 `
 
